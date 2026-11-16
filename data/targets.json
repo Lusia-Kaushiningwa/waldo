@@ -1,0 +1,52 @@
+[
+  {
+    "id": "beach-day",
+    "name": "Beach Day",
+    "file": "/scenes/beach-day.svg",
+    "width": 1600,
+    "height": 1000,
+    "radius": 32,
+    "characters": [
+      {
+        "name": "Pip the Penguin",
+        "x": 1336,
+        "y": 524
+      },
+      {
+        "name": "Zog the Alien",
+        "x": 783,
+        "y": 530
+      },
+      {
+        "name": "Captain Patch",
+        "x": 473,
+        "y": 529
+      }
+    ]
+  },
+  {
+    "id": "night-market",
+    "name": "Night Market",
+    "file": "/scenes/night-market.svg",
+    "width": 1600,
+    "height": 1000,
+    "radius": 32,
+    "characters": [
+      {
+        "name": "Pip the Penguin",
+        "x": 284,
+        "y": 559
+      },
+      {
+        "name": "Zog the Alien",
+        "x": 762,
+        "y": 593
+      },
+      {
+        "name": "Captain Patch",
+        "x": 1372,
+        "y": 661
+      }
+    ]
+  }
+]

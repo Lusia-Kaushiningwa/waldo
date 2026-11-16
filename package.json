@@ -1,0 +1,20 @@
+{
+  "name": "photo-tagging-game",
+  "version": "1.0.0",
+  "description": "Photo tagging game (Odin Project)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "scenes": "node scripts/generate-scenes.js",
+    "test": "node scripts/smoke-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

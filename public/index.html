@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crowd Spotter</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <!-- Picker screen -->
+  <main id="picker" class="screen">
+    <header class="hero">
+      <h1>Crowd Spotter</h1>
+      <p>Three characters are hiding in every crowd. Find them all, as fast as you can.</p>
+    </header>
+    <section>
+      <h2>Pick a scene</h2>
+      <div id="scene-list" class="scene-list" aria-live="polite">Loading scenes…</div>
+    </section>
+  </main>
+
+  <!-- Game screen -->
+  <div id="game" class="screen" hidden>
+    <header class="bar">
+      <button id="back" class="btn ghost" type="button">← Scenes</button>
+      <ul id="roster" class="roster" aria-label="Characters to find"></ul>
+      <div class="clock" aria-live="off"><span id="timer">0:00.0</span></div>
+    </header>
+
+    <div id="stage" class="stage">
+      <img id="photo" alt="A crowded scene. Find the hidden characters." draggable="false" />
+      <div id="markers"></div>
+      <div id="target" class="target" hidden>
+        <div class="target-box"></div>
+        <ul id="menu" class="menu" role="menu"></ul>
+      </div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+
+  <!-- Win dialog -->
+  <dialog id="win">
+    <form id="score-form" method="dialog">
+      <h2>You found everyone!</h2>
+      <p class="big" id="final-time"></p>
+      <label id="name-row">
+        Your name for the high scores
+        <input id="name" maxlength="20" autocomplete="nickname" placeholder="Anonymous" />
+      </label>
+      <div id="board-wrap" hidden>
+        <p id="rank-line"></p>
+        <ol id="board" class="board"></ol>
+      </div>
+      <div class="actions">
+        <button id="submit-score" class="btn" type="submit">Save score</button>
+        <button id="again" class="btn ghost" type="button" hidden>Play again</button>
+        <button id="to-scenes" class="btn ghost" type="button" hidden>Other scenes</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="/app.js"></script>
+</body>
+</html>
